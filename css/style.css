@@ -20,6 +20,7 @@ body {
     line-height: 1.6;
 }
 
+/*Навигационная панель*/
 .navbar {
     background-color: rgb(23, 72, 146) !important;
     box-shadow: 0 2px 4px rgb(18, 42, 78) !important;
@@ -54,9 +55,74 @@ body {
     font-weight: 600;
 }
 
+/*Изображения*/
 img {
     max-width: 100%;
     height: auto;
     display: block;
+    
 }
 
+.card {
+    box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+    border: 1px solid rgba(0, 0, 0, 0.125);
+    transition: all 0.3s ease;
+    margin-bottom: 1.5rem;
+}
+.card:hover {
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+    transform: translateY(-2px);
+}
+
+/*Сайдбар*/
+aside .card-header {
+    font-weight: 600;
+    border-bottom: none;
+}
+.card .card-header {
+    background-color: #174892 !important;
+    color: white !important;
+}
+.sidebar-header {
+    background-color: #174892 !important;
+    color: white !important;
+}
+/* Стили для кнопок в сайдбаре */
+.btn {
+    transition: all 0.3s ease;
+}
+
+.btn:hover {
+    transform: translateY(-1px);
+}
+
+.list-group-item {
+    border: none;
+    padding: 0.75rem 1rem;
+    transition: background-color 0.2s ease;
+}
+.list-group-item:hover {
+    background-color: #ffffff;
+    transform: translateX(5px);
+}
+
+/* Адаптивность для мобильных устройств */
+@media (max-width: 768px) {
+    .container {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    
+    main, aside {
+        margin-bottom: 2rem;
+    }
+    
+    /* На мобильных сайдбар становится уже */
+    aside {
+        order: 2;
+    }
+    
+    main {
+        order: 1;
+    }
+}
