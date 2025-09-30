@@ -16,7 +16,7 @@
     <!--Навигационная панель-->
     <nav class="navbar navbar-expand-lg ">
         <div class="container">
-            <a class="navbar-brand" href="#">ТИ</a>
+            <a class="navbar-brand" href="#"><i class=" bi-flower2"></i>ТИ</a>
             <!--Для мобильных устройств-->
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                 <span class="navbar-toggler-icon"></span>
@@ -57,35 +57,124 @@
         </div>
     </nav>
 
-    <div
-        class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
-        <h1 class="h2">Yii</h1>
-    </div>
+    <!--Сайдбар-->
+    <div class="container mt-3">
+        <div class="row">
+            <!-- Сайдбар-->
+            <aside class="col-lg-3 col-md-4 order-1 order-lg-2 mb-4">
+                <div class="sticky-top" style="top: 20px;">
+                    <div class="card sidebar-card">
+                        <div class="card-header">
+                            <h5 class="mb-0"><i class="bi bi-list"></i> Навигация по странице</h5>
+                        </div>
+                        <div class="card-body p-0">
+                            <div class="list-group list-group-flush">
+                                <a href="#what-is-yii" class="list-group-item list-group-item-action">
+                                    <i class="bi bi-question-circle"></i> Что такое Yii?
+                                </a>
+                                <a href="#features" class="list-group-item list-group-item-action">
+                                    <i class="bi bi-star"></i> Особенности
+                                </a>
+                                <a href="#advantages" class="list-group-item list-group-item-action">
+                                    <i class="bi bi-plus-circle"></i> Преимущества
+                                </a>
+                                <a href="#projects" class="list-group-item list-group-item-action">
+                                    <i class="bi bi-briefcase"></i> Проекты на Symfony
+                                </a>
 
-    <div class="row">
-        <div class="col-12">
-            <div class="card mb-4">
-                <div class="card-body">
-                    <h3 class="card-title">Что такое Yii?</h3>
-                    <img src="assets/images/yii-logo.png" alt="Логотип Yii">
-                    <p class="card-text"><a href="https://www.yiiframework.com/">Yii</a> — это простой, но
-                        высокопроизводительный универсальный фреймворк, основанный на компонентной структуре. Он
-                        известен благодаря высокой производительности, но, в первую очередь, он знаменит
-                        своей простотой.F Этот фреймворк появился в декабре 2008 года. Он позволяет использовать код
-                        сторонних разработчиков, а имеющийся в нём генератор кода Gii позволяет быстро создавать базовые
-                        структуры, на основе которых можно строить
-                        собственные решения.
-                    </p>
-                    <p class="card-text">Его создатели очень серьёзно подошли к вопросам безопасности. В частности, в
-                        него встроены механизмы хеширования паролей, основанные на bcrypt, и средства шифрования. Этот
-                        фреймворк отлично подойдёт тем, кто хочет нанять разработчика
-                        из Индии для работы над проектами из сфер электронной коммерции, создания CMS или форумов.</P>
-
+                            </div>
+                        </div>
+                    </div>
                 </div>
-            </div>
+            </aside>
+
+            <main class="col-lg-9 col-md-8 order-2 order-lg-1">
+                <h1 class="mb-4"> Yii</h1>
+                <section id="what-is-yii" class="mb-5">
+                    <div class="card">
+                        <div class="card-body">
+                            <h3 class="card-title"> Что такое Yii?</h3>
+                            <div class="text-center mb-4">
+                                <img src="assets/images/yii-logo.png" alt="Логотип Yii"
+                                    class="img-fluid mx-auto d-block" style="max-height:300px;">
+                            </div>
+                            <p class="card-text"><a href="https://www.yiiframework.com/">Yii</a> — это
+                                высокопроизводительный компонентный фреймворк с открытым исходным кодом, написанный на
+                                PHP. Yii предлагает быструю разработку веб-приложений благодаря своей чистой и
+                                эффективной архитектуре, известной как "ленивая загрузка".</p>
+                            <p class="card-text">Он позволяет разработчикам избегать рутинных задач, предоставляя мощные
+                                инструменты для генерации кода и построения сложных интерфейсов.</P>
+                            <p class="card-text">Yii бесплатен и публикуется под лицензией BSD. Разработка проекта
+                                поддерживается международным сообществом и компанией Qiang Xue.</p>
+                        </div>
+                    </div>
+                </section>
+
+                <section id="features" class="mb-5">
+                    <diV class="card">
+                        <div class="card-body">
+                            <h3 class="card-title">Особенности Yii</h3>
+                            <p class="card-text">Yii известен своей исключительной производительностью и безопасностью.
+                                Фреймворк следует парадигме "Конвенция вместо конфигурации", но при этом предоставляет
+                                гибкость для настройки под свои нужды. Это делает его популярным выбором для
+                                высоконагруженных систем, таких как порталы, CRM и системы управления контентом.</p>
+                            <h5 class="card-title"><i class="bi bi-gear"></i> Компонентная архитектура
+                            </h5>
+                            <p class="card-text">Построен на основе набора компонентов, которые легко использовать как вместе, так и по отдельности в других проектах.</p>
+                        </div>
+                    </diV>
+                </section>
+
+                <section id="advantages" class="mb-5">
+                    <div class="card">
+                        <div class="card-body">
+                            <h3 class="card-title"><i class="bi bi-plus-circle text-success"></i> Преимущества Yii</h3>
+                            <ul class="list-group">
+                            <li class="list-group-item">
+                                <i class="bi bi-check-circle text-success"></i> Высокая производительность и безопасность
+                                </li>
+                                <li class="list-group-item">
+                                    <i class="bi bi-check-circle text-success"></i> Мощный генератор кода Gii
+                                </li>
+                                <li class="list-group-item">
+                                    <i class="bi bi-check-circle text-success"></i> Удобный ActiveRecord
+                                </li>
+                                <li class="list-group-item">
+                                    <i class="bi bi-check-circle text-success"></i> Поддержка виджетов для постоения UI
+                                </li>
+                                <li class="list-group-item">
+                                    <i class="bi bi-check-circle text-success"></i> Эффективная система кэширования
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+                <section id="projects" class="mb-5">
+                    <div class="card">
+                        <div class="card-body">
+                            <h3 class="card-title"> Проекты, созданные с использованием
+                                Yii</h3>
+                        
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item">
+                                    <strong>HumHub</strong> - это бесплатное ПО для социальных сетей с открытым исходным кодом, которое предоставляет простой в использовании набор инструментов для создания и запуска собственной социальной сети.
+                                </li>
+                                <li class="list-group-item">
+                                    <strong>StarTrack</strong> -  российская краудинвестинговая платформа, созданная в 2013 году при поддержке Фонда Развития Интернет-Инициатив.
+                                </li>
+                                <li class="list-group-item">
+                                    <strong>Larne</strong> 
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+
         </div>
     </div>
-    
+    </div>
+    </div>
+
     <!--Футер-->
     <footer class="bg-dark text-white pt-5 pb-4">
         <div class="container">
@@ -116,7 +205,7 @@
         </div>
     </footer>
 
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">   
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
         crossorigin="anonymous"></script>
