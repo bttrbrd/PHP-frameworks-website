@@ -23,5 +23,5 @@
 
 ##Ссылки
 
-- **Сайт на GitHub Pages:** https://github.com/bttrbrd/PHP-frameworks-website/deployments/github-pages
+- **Сайт на GitHub Pages:** https://bttrbrd.github.io/PHP-frameworks-website/
 - **Репозиторий на GitHub:** https://github.com/bttrbrd/PHP-frameworks-website
