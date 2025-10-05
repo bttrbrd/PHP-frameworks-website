@@ -57,10 +57,10 @@
     </nav>
 
     <!--Сайдбар-->
-    <div class="container mt-3">
+    <main class="container mt-3">
         <div class="row">
-             <!-- Сайдбар-->
-             <aside class="col-lg-3 col-md-4 order-1 order-lg-2 mb-4">
+            <!-- Сайдбар-->
+            <aside class="col-lg-3 col-md-4 order-1 order-lg-2 mb-4">
                 <div class="sticky-top" style="top: 20px;">
                     <div class="card sidebar-card">
                         <div class="card-header">
@@ -87,48 +87,91 @@
                 </div>
             </aside>
 
-            <main class="col-lg-9 col-md-8 order-2 order-lg-1">
+            <main class="col-lg-9 col-md-8 ">
                 <h1 class="h2">CodeIgniter</h1>
-                <section id="what-is-codeigniter">
+
+                <section id="what-is-codeigniter" class="mb-5">
                     <div class="card">
                         <div class="card-body">
                             <h3 class="card-title">Что такое CodeIgniter?</h3>
-                            <img src="assets/images/codeIgniter-logo.png" alt="Логотип CodeIgniter" class="img-fluid mx-auto d-block">
+                            <img src="assets/images/codeIgniter-logo.png" alt="Логотип CodeIgniter"
+                                class="img-fluid mx-auto d-block" style="max-height: 350px;">
                             <p class="card-text"><a href="https://www.codeigniter.com/">CodeIgniter</a>
-                                — это фреймворк, который известен тем, что для его приведения в рабочее состояние
-                                требуется
-                                минимальное количество настроек. Это позволяет тем, кто его выбирает, работать в хорошем
-                                темпе.
-                                Его много раз, с момента появления в 2006 году, обновляли. Сейчас самой свежей его
-                                версией
-                                является 4.0.3.
+                                — это легковесный и быстрый PHP-фреймворк с минимальной конфигурацией, созданный для
+                                разработчиков, которым нужны простые и элегантные инструменты для создания
+                                полнофункциональных веб-приложений. Он предлагает прямолинейный подход к разработке,
+                                сводя к минимуму рутинные задачи и предоставляя четко документированную библиотеку
+                                классов для часто нужных функций.
                             </p>
 
-                            <p class="card-text">Размер фреймворка, включая документацию, не превышает 2 Мб, но он,
-                                несмотря на
-                                такую компактность, предлагает разработчикам множество стандартных модулей для создания
-                                компонентов, отличающихся надёжностью и подходящих для многократного использования. Это
-                                делает
-                                CodeIgniter отличным выбором для тех, кто создаёт динамические веб-сайты.</P>
-
-                            <p class="card-text">Этот фреймворк поощряет использование архитектуры MVC, но он, в плане
-                                архитектуры создаваемых на его основе проектов, весьма гибок, и не ограничивает
-                                разработчиков
-                                лишь этой архитектурой. В нём имеется надёжная система защиты контента, он обладает
-                                стандартными
-                                механизмами для защиты от CSRF- и XSS-атак.
-                            </p>
-                            <p class="card-text">Разработчику, присматривающемуся к CodeIgniter, стоит знать о том, что
-                                это одна
-                                из тех PHP-платформ, которые легче всего освоить. Его, кроме того, очень легко
-                                устанавливать.
-                                Эти факторы делают его идеальным выбором для новичков.</p>
+                            <p class="card-text">CodeIgniter 4 требует PHP 7.3 и выше. Фреймворк обладает отличной
+                                поддержкой большинства реляционных баз данных (MySQL, PostgreSQL, SQLite и др.) через
+                                свой абстрактный слой для работы с БД. В отличие от Symfony или Laravel, CodeIgniter не
+                                поставляется со встроенным ORM по умолчанию, предлагая вместо этого более легкий и
+                                быстрый Query Builder. Однако разработчик может легко подключить любой сторонний ORM,
+                                например, Doctrine.</p>
+                            <p class="card-text">CodeIgniter бесплатен и публикуется под лицензией MIT. Проект
+                                спонсируется британской компанией British Columbia Institute of Technology (BCIT).</p>
                         </div>
                     </div>
                 </section>
 
+                <section id="features" class="mb-5">
+                    <div class="card">
+                        <div class="card-body">
+                            <h3 class="card-title">Особенности</h3>
+                            <p class="card-text">CodeIgniter известен своей исключительной скоростью работы и малым
+                                footprint (занимает очень мало места). Он слабо следует MVC-паттерну, предоставляя
+                                разработчику большую свободу в организации кода. Благодаря своей простоте и
+                                легковесности, он идеально подходит для начинающих разработчиков и для создания
+                                приложений, где критична производительность и простота развертывания.</p>
+                        </div>
+                    </div>
+                </section>
+
+                <section id="advantages" class="mb-5">
+                    <div class="card">
+                        <div class="card-body">
+                            <h3 class="card-title"><i class="bi bi-plus-circle text-success"></i> Преимущества
+                                CodeIgniter
+                            </h3>
+                            <ul class="list-group">
+                                <li class="list-group-item">
+                                    <i class="bi bi-check-circle text-success"></i> Высокая производительность
+                                </li>
+                                <li class="list-group-item">
+                                    <i class="bi bi-check-circle text-success"></i> Простота в изучении и использовании
+                                </li>
+                                <li class="list-group-item">
+                                    <i class="bi bi-check-circle text-success"></i> Отличная документация
+                                </li>
+                                <li class="list-group-item">
+                                    <i class="bi bi-check-circle text-success"></i> Малый размер
+                                </li>
+                                <li class="list-group-item">
+                                    <i class="bi bi-check-circle text-success"></i> Минимальная конфигурация
+                                </li>
+                                <li class="list-group-item">
+                                    <i class="bi bi-check-circle text-success"></i> Гибкость
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+
+                <section id="projects" class="mb-5">
+                    <div class="card">
+                        <div class="card-body">
+                            <h3 class="card-title"> Проекты, созданные с использованием
+                                CodeIgniter</h3>
+                            <p class="card-text">CodeIgniter используется в основе множества проектов, и одним из ярких
+                                примеров является <strong> бонусная программа "Спасибо"</strong> от Сбербанка</strong>
+                            </p>
+                        </div>
+                    </div>
+                </section>
         </div>
-    </div>
+    </main>
 
     <!--Футер-->
     <footer class="bg-dark text-white pt-5 pb-4">
