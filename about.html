@@ -57,11 +57,164 @@
         </div>
     </nav>
 
-    <p>Сайт создан в рамках задания "Использование CSS фреймворков" по дисциплине "Технологии Интернет".</p>
-    <p>Целью данного учебного проекта является закрепление на практике навыков фронтенд-разработки, включая создание
-        семантической, валидной и полностью адаптивной верстки с использованием такого CSS-фреймворка как Bootstrap.</p>
+    <div class="container mt-3">
+        <div class="row">
+            <aside class="col-lg-3 col-md-4 order-1 order-lg-2 mb-4">
+                <div class="sticky-top" style="top: 20px;">
+                    <div class="card">
+                        <div class="card-header bg-primary text-white">
+                            <h5 class="mb-0"><i class="bi bi-list"></i>Навигация по странице</h5>
+                        </div>
+                        <div class="card-body p-0">
+                            <div class="list-group list-group-flush">
+                                <a href="#about-project" class="list-group-item list-group-item-action">
+                                    <i class="bi bi-question-circle"></i> О проекте
+                                </a>
+                                <a href="#purpose" class="list-group-item list-group-item-action">
+                                    <i class="bi bi-lightbulb"></i> Цели и задачи
+                                </a>
+                                <a href="#technologies" class="list-group-item list-group-item-action">
+                                    <i class="bi bi-tools"></i> Используемые технологии
+                                </a>
+                                <a href="#structure" class="list-group-item list-group-item-action">
+                                    <i class="bi bi-diagram-3"></i> Структура сайта
+                                </a>
+                                <a href="#about-author" class="list-group-item list-group-item-action">
+                                    <i class="bi bi-person"></i> Об авторе
+                                </a>
+                            </div>
+                        </div>
+                    </div>
 
-    <img src="assets/китики.gif" alt="Котятки мяу :3" class="img-fluid mx-auto d-block" style="max-height: 350px;">
+                    <div class="card">
+                        <div class="card-header bg-success text-white">
+                            <h6 class="mb-0"><i class="bi bi-lightning"></i>Интересный факт</h6>
+                        </div>
+                        <div class="card-body">
+                            <p class="small">На сайте представлены 4 самых популярных PHP-фреймворка.</p>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-body">
+                            <img src="assets/котики-отличного-дня.gif" alt="Отличного дня!"
+                                class="img-fluid mx-auto d-block">
+                        </div>
+                    </div>
+                </div>
+            </aside>
+
+            <main class="col-lg-9 col-md-8">
+                <h1 class="mb-4"> О сайтике :3</h1>
+                <section id="about-project" class="mb-5">
+                    <div class="card">
+                        <div class="card-body">
+                            <h2 class="card-title">О проекте</h2>
+                            <p class="card-text">Сайт создан в рамках задания "Использование CSS фреймворков" по
+                                дисциплине "Технологии Интернет".</p>
+                            <p class="card-text">Это учебный проект, посвященный изучению современных PHP-фреймворков и
+                                технологий веб-разработки.</p>
+                            <img src="assets/китики.gif" alt="Котятки мяу :3" class="img-fluid mx-auto d-block"
+                                style="max-height: 350px;">
+                        </div>
+                    </div>
+                </section>
+                <section id="purpose" class="mb-5">
+                    <div class="card">
+                        <div class="card-body">
+                            <h2 class="card-title">Цели и задачи</h2>
+                            <p class="card-text">Основные цели проекта:</p>
+                            <ul>
+                                <li>Закрепление на практике навыков фронтенд-разработки</li>
+                                <li>Создание семаньтической, валидной и адаптивной верстки</li>
+                                <li>Освоение работы с CSS-фреймворком Bootstrap</li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+                <section>
+                    <div class="card">
+                        <div class="card-body">
+                            <h2 class="card-title"></h2>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <h5>Фронтенд</h5>
+                                    <ul>
+                                        <li>HTML5</li>
+                                        <li>CSS</li>
+                                        <li>Bootstrap 5.3</li>
+                                        <li>Bootstrap Icons</li>
+                                    </ul>
+                                </div>
+                                <div class="col-md-6">
+                                    <h5>Тематика</h5>
+                                    <ul>
+                                        <li>PHP-фреймворки</li>
+                                        <li>Laravel, Yii, Symfony, CodeIgniter</li>
+                                        <li>Сравнительный анализ</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section id="structure" class="mb-5">
+                    <div class="card">
+                        <div class="card-body">
+                            <h2 class="card-title">Структура сайта</h2>
+                            <p>Сайт состоит из следующих основных разделов:</p>
+                            <div class="table-responsive">
+                                <table class="table table-striped">
+                                    <thead>
+                                        <tr>
+                                            <th>Страница</th>
+                                            <th>Описание</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>Главная</td>
+                                            <td>Обзорная информация о PHP-фреймворках</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Фреймворки</td>
+                                            <td>Детальные обзоры каждого фреймворка</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Сравнение</td>
+                                            <td>Сравнительная таблица фреймворков</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Источники</td>
+                                            <td>Список использованных материалов</td>
+                                        </tr>
+                                        <tr>
+                                            <td>О сайте</td>
+                                            <td>Информация о проекте и авторе</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section id="about-author" class="mb-5">
+                    <div class="card">
+                        <div class="card-body">
+                            <h2 class="card-title">Об авторе:</h2>
+                            <div class="row align-items-center">
+                                <div class="col-md-8"></div>
+                                <p class="card-text">Сайт разработан Жигаловой Викторией студенткой 335Б группы.</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </main>
+        </div>
+    </div>
+
     <!--Футер-->
     <footer class="bg-dark text-white pt-5 pb-4">
         <div class="container">
