@@ -57,164 +57,278 @@
         </div>
     </nav>
 
-    <div class="container mt-4">
+    <div class="container mt-3">
         <div class="row">
-            <div class="col-12">
-                <div
-                    class="d-flex justify-content-between align-items-center pb-3 mb-4 border-bottom">
+
+            <aside class="col-lg-3 col-md-4 order-1 order-lg-2 mb-4">
+                <div class="sticky-top" style="top: 20px;">
+                    <!-- Навигация по таблице -->
+                    <div class="card mb-4">
+                        <div class="card-header bg-primary text-white">
+                            <h5 class="mb-0"><i class="bi bi-list"></i> Критерии сравнения</h5>
+                        </div>
+                        <div class="card-body p-0">
+                            <div class="list-group list-group-flush">
+                                <a href="#philosophy" class="list-group-item list-group-item-action">
+                                    <i class="bi bi-bullseye"></i> Философия и цель
+                                </a>
+                                <a href="#architecture" class="list-group-item list-group-item-action">
+                                    <i class="bi bi-diagram-3"></i> Архитектура
+                                </a>
+                                <a href="#requirements" class="list-group-item list-group-item-action">
+                                    <i class="bi bi-gear"></i> Требования к PHP
+                                </a>
+                                <a href="#performance" class="list-group-item list-group-item-action">
+                                    <i class="bi bi-speedometer2"></i> Производительность
+                                </a>
+                                <a href="#security" class="list-group-item list-group-item-action">
+                                    <i class="bi bi-shield-check"></i> Безопасность
+                                </a>
+                                <a href="#database" class="list-group-item list-group-item-action">
+                                    <i class="bi bi-database"></i> База данных / ORM
+                                </a>
+                                <a href="#cli" class="list-group-item list-group-item-action">
+                                    <i class="bi bi-terminal"></i> Инструменты CLI
+                                </a>
+                                <a href="#community" class="list-group-item list-group-item-action">
+                                    <i class="bi bi-people"></i> Сообщество
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Навигация по выводам -->
+                    <div class="card mb-4">
+                        <div class="card-header bg-success text-white">
+                            <h5 class="mb-0"> Выводы по фреймворкам</h5>
+                        </div>
+                        <div class="card-body p-0">
+                            <div class="list-group list-group-flush">
+                                <a href="#laravel-conclusion" class="list-group-item list-group-item-action">
+                                    <i class="bi bi-star"></i> Laravel
+                                </a>
+                                <a href="#symfony-conclusion" class="list-group-item list-group-item-action">
+                                    <i class="bi bi-briefcase"></i> Symfony
+                                </a>
+                                <a href="#yii-conclusion" class="list-group-item list-group-item-action">
+                                    <i class="bi bi-lightning"></i> Yii
+                                </a>
+                                <a href="#codeigniter-conclusion" class="list-group-item list-group-item-action">
+                                    <i class="bi bi-rocket-takeoff"></i> CodeIgniter
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Быстрый переход -->
+                    <div class="card">
+                        <div class="card-header bg-info text-white">
+                            <h6 class="mb-0">Быстрый переход</h6>
+                        </div>
+                        <div class="card-body">
+                            <div class="d-grid gap-2">
+                                <a href="#comparison-table" class="btn btn-outline-primary btn-sm"> К таблице сравнения
+                                </a>
+                                <a href="#conclusions" class="btn btn-outline-success btn-sm"> К выводам
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </aside>
+
+            <main class="col-lg-9 col-md-8">
+                <div class="d-flex justify-content-between align-items-center pb-3 mb-4 border-bottom">
                     <h1 class="h2 mb-0">Сравнение PHP-фреймворков</h1>
                 </div>
 
-                <div class="table-container" style="position: relative; overflow: auto;">
-                    <table class="table table-bordered table-hover">
-                        <thead class="table-primary">
-                            <tr>
-                                <th scope="col" style="position: sticky; left: 0; background: #e7f1ff;">Критерий</th>
-                                <th scope="col" class="text-center">Laravel</th>
-                                <th scope="col" class="text-center">Symfony</th>
-                                <th scope="col" class="text-center">Yii</th>
-                                <th scope="col" class="text-center">CodeIgniter</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <th scope="row" style="position: sticky; left: 0;">Философия и цель</th>
-                                <td>"Фреймворк для веб-мастеров". Разработка с удовольствием, элегантный синтаксис,
-                                    быстрая
-                                    разработка
-                                    современных приложений.</td>
-                                <td>"Набор переиспользуемых PHP компонентов" и полноценный фреймворк. Гибкость,
-                                    стабильность и
-                                    enterprise-уровень.</td>
-                                <td>"Yes It Is!" (Да, это оно!). Высокая производительность, безопасность и быстрая
-                                    разработка
-                                    для
-                                    высоконагруженных проектов.</td>
-                                <td>Простота, легковесность и высочайшая производительность. Легок в изучении и
-                                    развертывании.
-                                </td>
-                            </tr>
-                            <tr>
-                                <th scope="row" style="position: sticky; left: 0;">Архитектура</th>
-                                <td>MVC (Model-View-Controller)</td>
-                                <td>MVC (но очень гибкий, часто используется как набор компонентов)</td>
-                                <td>MVC (очень строгий и мощный)</td>
-                                <td>MVC (упрощенный)</td>
-                            </tr>
-                            <tr>
-                                <th scope="row" style="position: sticky; left: 0;">Требования к PHP</th>
-                                <td>8.1+</td>
-                                <td>8.2+</td>
-                                <td>7.4+ (для Yii2)</td>
-                                <td>7.4+ (рекомендуется 8.1+)</td>
-                            </tr>
-                            <tr>
-                                <th scope="row" style="position: sticky; left: 0;">Производительность</th>
-                                <td>Средняя (из коробки). Требует оптимизации (кэширование роутов, конфига, etc.).</td>
-                                <td>Средняя/Высокая. Гибкость позволяет настроить под высокие нагрузки. Компоненты очень
-                                    оптимизированы.
-                                </td>
-                                <td>Очень высокая. Один из самых быстрых полнофункциональных фреймворков благодаря
-                                    "ленивой"
-                                    загрузке.
-                                </td>
-                                <td>Самая высокая. Очень легковесный, минимальные накладные расходы.</td>
-                            </tr>
-                            <tr>
-                                <th scope="row" style="position: sticky; left: 0;">Безопасность</th>
-                                <td> Очень высокая. Встроенные механизмы: CSRF-токены, защита от XSS, SQL-инъекций
-                                    (через ORM),
-                                    шифрование.</td>
-                                <td>Очень высокая. Компонент Security предоставляет мощные инструменты для
-                                    аутентификации,
-                                    авторизации и
-                                    защиты.</td>
-                                <td>Очень высокая. Встроенные валидаторы, безопасные куки, защита от CSRF и XSS по
-                                    умолчанию.
-                                </td>
-                                <td>Высокая. Имеет базовые защиты (XSS, CSRF, экранирование данных), но многие вещи
-                                    ложатся на
-                                    разработчика.</td>
-                            </tr>
-                            <tr>
-                                <th scope="row" style="position: sticky; left: 0;">База данных / ORM</th>
-                                <td> Eloquent ORM (активная запись, очень простой и выразительный синтаксис)</td>
-                                <td>Doctrine (реализация Data Mapper, более мощный и гибкий, но сложный) или Propel.
-                                </td>
-                                <td>ActiveRecord (мощная встроенная реализация, очень удобная для стандартных операций).
-                                </td>
-                                <td>Собственный Query Builder (легкий и простой). Есть поддержка Eloquent и Doctrine
-                                    через
-                                    сторонние
-                                    модули.</td>
-                            </tr>
-                            <tr>
-                                <th scope="row" style="position: sticky; left: 0;">Инструменты CLI</th>
-                                <td>Artisan (очень мощный, множество команд, легко создавать свои)</td>
-                                <td>Symfony Console (де-факто стандарт для создания CLI-приложений в PHP)</td>
-                                <td>Yii CLI (полезные команды для миграций, генерации кода)</td>
-                                <td>Spark (новый CLI в v4, набирает функциональность)</td>
-                            </tr>
-                            <tr>
-                                <th scope="row" style="position: sticky; left: 0;">Сообщество и популярность</th>
-                                <td>Самое большое и активное. Лидер по количеству статей, пакетов, вакансий.</td>
-                                <td>Огромное и стабильное. Широко используется в enterprise-сегменте.</td>
-                                <td>Большое и активное, особенно в странах СНГ.</td>
-                                <td>Большое и дружелюбное, особенно среди новичков и legacy-проектов.</td>
-                            </tr>
-                        </tbody>
-                    </table>
+                <section id="comparison-table">
+                    <div class="card mb-5">
+                        <div class="card-body p-0">
+                            <div class="table-container" style="position: relative; overflow: auto;">
+                                <table class="table table-bordered table-hover mb-0">
+                                    <thead class="table-primary">
+                                        <tr>
+                                            <th scope="col" style="position: sticky; left: 0; background: #e7f1ff;">
+                                                Критерий</th>
+                                            <th scope="col" class="text-center">Laravel</th>
+                                            <th scope="col" class="text-center">Symfony</th>
+                                            <th scope="col" class="text-center">Yii</th>
+                                            <th scope="col" class="text-center">CodeIgniter</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <th id="philosophy" scope="row" style="position: sticky; left: 0;">Философия и цель</th>
+                                            <td>"Фреймворк для веб-мастеров". Разработка с удовольствием, элегантный
+                                                синтаксис,
+                                                быстрая
+                                                разработка
+                                                современных приложений.</td>
+                                            <td>"Набор переиспользуемых PHP компонентов" и полноценный фреймворк.
+                                                Гибкость,
+                                                стабильность и
+                                                enterprise-уровень.</td>
+                                            <td>"Yes It Is!" (Да, это оно!). Высокая производительность, безопасность и
+                                                быстрая
+                                                разработка
+                                                для
+                                                высоконагруженных проектов.</td>
+                                            <td>Простота, легковесность и высочайшая производительность. Легок в
+                                                изучении и
+                                                развертывании.
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th id="architecture" scope="row" style="position: sticky; left: 0;">Архитектура</th>
+                                            <td>MVC (Model-View-Controller)</td>
+                                            <td>MVC (но очень гибкий, часто используется как набор компонентов)</td>
+                                            <td>MVC (очень строгий и мощный)</td>
+                                            <td>MVC (упрощенный)</td>
+                                        </tr>
+                                        <tr>
+                                            <th id="requirements" scope="row" style="position: sticky; left: 0;">Требования к PHP</th>
+                                            <td>8.1+</td>
+                                            <td>8.2+</td>
+                                            <td>7.4+ (для Yii2)</td>
+                                            <td>7.4+ (рекомендуется 8.1+)</td>
+                                        </tr>
+                                        <tr>
+                                            <th id="performance" scope="row" style="position: sticky; left: 0;">Производительность</th>
+                                            <td>Средняя (из коробки). Требует оптимизации (кэширование роутов, конфига,
+                                                etc.).</td>
+                                            <td>Средняя/Высокая. Гибкость позволяет настроить под высокие нагрузки.
+                                                Компоненты очень
+                                                оптимизированы.
+                                            </td>
+                                            <td>Очень высокая. Один из самых быстрых полнофункциональных фреймворков
+                                                благодаря
+                                                "ленивой"
+                                                загрузке.
+                                            </td>
+                                            <td>Самая высокая. Очень легковесный, минимальные накладные расходы.</td>
+                                        </tr>
+                                        <tr>
+                                            <th id="security" scope="row" style="position: sticky; left: 0;">Безопасность</th>
+                                            <td> Очень высокая. Встроенные механизмы: CSRF-токены, защита от XSS,
+                                                SQL-инъекций
+                                                (через ORM),
+                                                шифрование.</td>
+                                            <td>Очень высокая. Компонент Security предоставляет мощные инструменты для
+                                                аутентификации,
+                                                авторизации и
+                                                защиты.</td>
+                                            <td>Очень высокая. Встроенные валидаторы, безопасные куки, защита от CSRF и
+                                                XSS по
+                                                умолчанию.
+                                            </td>
+                                            <td>Высокая. Имеет базовые защиты (XSS, CSRF, экранирование данных), но
+                                                многие вещи
+                                                ложатся на
+                                                разработчика.</td>
+                                        </tr>
+                                        <tr>
+                                            <th id="database" scope="row" style="position: sticky; left: 0;">База данных / ORM</th>
+                                            <td> Eloquent ORM (активная запись, очень простой и выразительный синтаксис)
+                                            </td>
+                                            <td>Doctrine (реализация Data Mapper, более мощный и гибкий, но сложный) или
+                                                Propel.
+                                            </td>
+                                            <td>ActiveRecord (мощная встроенная реализация, очень удобная для
+                                                стандартных операций).
+                                            </td>
+                                            <td>Собственный Query Builder (легкий и простой). Есть поддержка Eloquent и
+                                                Doctrine
+                                                через
+                                                сторонние
+                                                модули.</td>
+                                        </tr>
+                                        <tr>
+                                            <th id="cli" scope="row" style="position: sticky; left: 0;">Инструменты CLI</th>
+                                            <td>Artisan (очень мощный, множество команд, легко создавать свои)</td>
+                                            <td>Symfony Console (де-факто стандарт для создания CLI-приложений в PHP)
+                                            </td>
+                                            <td>Yii CLI (полезные команды для миграций, генерации кода)</td>
+                                            <td>Spark (новый CLI в v4, набирает функциональность)</td>
+                                        </tr>
+                                        <tr>
+                                            <th id="community" scope="row" style="position: sticky; left: 0;">Сообщество и популярность
+                                            </th>
+                                            <td>Самое большое и активное. Лидер по количеству статей, пакетов, вакансий.
+                                            </td>
+                                            <td>Огромное и стабильное. Широко используется в enterprise-сегменте.</td>
+                                            <td>Большое и активное, особенно в странах СНГ.</td>
+                                            <td>Большое и дружелюбное, особенно среди новичков и legacy-проектов.</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section id="conclutions">
+                <h2 class="mb-4">Выводы </h2>
+                <div class="card">
+                    <div class="card-body">
+                        <h3 class="card-title">Laravel — «Золотая середина» и индустриальный стандарт.</h3>
+                        <ul>
+                            <li><strong>Плюсы:</strong>Невероятно богатая экосистема, элегантный синтаксис, отличная
+                                документация, огромное сообщество. Идеален для быстрого старта и проектов любой
+                                сложности.</li>
+                            <li><strong>Минусы:</strong>Некоторый оверхед "из коробки", "магия" может затруднять
+                                понимание для новичков.</li>
+                            <li><strong>Вердикт:</strong>Лучший выбор для большинства проектов и команд. Его
+                                популярность гарантирует легкость найма разработчиков и нахождения решений проблем.</li>
+                        </ul>
+                    </div>
                 </div>
-            </div>
 
-            <h1 class="mb-4">Выводы </h1>
-            <div class="card">
-                <div class="card-body">
-                    <h3 class="card-title">Laravel — «Золотая середина» и индустриальный стандарт.</h3>
-                    <ul>
-                        <li><strong>Плюсы:</strong>Невероятно богатая экосистема, элегантный синтаксис, отличная документация, огромное сообщество. Идеален для быстрого старта и проектов любой сложности.</li>
-                        <li><strong>Минусы:</strong>Некоторый оверхед "из коробки", "магия" может затруднять понимание для новичков.</li>
-                        <li><strong>Вердикт:</strong>Лучший выбор для большинства проектов и команд. Его популярность гарантирует легкость найма разработчиков и нахождения решений проблем.</li>
-                    </ul>
+                <div class="card">
+                    <div class="card-body">
+                        <h3 class="card-title">Symfony — «Профессионал» для сложных и масштабируемых систем.</h3>
+                        <ul>
+                            <li><strong>Плюсы:</strong>Невероятная гибкость, модульность, стабильность, строгое
+                                следование лучшим практикам. Его компоненты — фундамент многих других проектов (включая
+                                Laravel).</li>
+                            <li><strong>Минусы:</strong>Высокий порог входа, больше boilerplate-кода, требует глубоких
+                                знаний.</li>
+                            <li><strong>Вердикт:</strong>Выбор для крупных корпоративных приложений, где важны
+                                долгосрочная поддержка, стабильность и полный контроль над архитектурой.</li>
+                        </ul>
+                    </div>
                 </div>
-            </div>
 
-            <div class="card">
-                <div class="card-body">
-                    <h3 class="card-title">Symfony — «Профессионал» для сложных и масштабируемых систем.</h3>
-                    <ul>
-                        <li><strong>Плюсы:</strong>Невероятная гибкость, модульность, стабильность, строгое следование лучшим практикам. Его компоненты — фундамент многих других проектов (включая Laravel).</li>
-                        <li><strong>Минусы:</strong>Высокий порог входа, больше boilerplate-кода, требует глубоких знаний.</li>
-                        <li><strong>Вердикт:</strong>Выбор для крупных корпоративных приложений, где важны долгосрочная поддержка, стабильность и полный контроль над архитектурой.</li>
-                    </ul>
+                <div class="card">
+                    <div class="card-body">
+                        <h3 class="card-title"> Yii — «Гонщик» для производительности.</h3>
+                        <ul>
+                            <li><strong>Плюсы:</strong>Очень высокая производительность, мощный генератор кода Gii,
+                                отличная безопасность "из коробки", понятная архитектура.</li>
+                            <li><strong>Минусы:</strong>Меньше "гламура", чем у Laravel, стиль кодирования может
+                                показаться более строгим.</li>
+                            <li><strong>Вердикт:</strong>Отличный выбор для высоконагруженных проектов, таких как
+                                порталы, E-commerce и приложения с интенсивной работой с данными. Особенно популярен в
+                                странах СНГ.</li>
+                        </ul>
+                    </div>
                 </div>
-            </div>
 
-            <div class="card">
-                <div class="card-body">
-                    <h3 class="card-title"> Yii — «Гонщик» для производительности.</h3>
-                    <ul>
-                        <li><strong>Плюсы:</strong>Очень высокая производительность, мощный генератор кода Gii, отличная безопасность "из коробки", понятная архитектура.</li>
-                        <li><strong>Минусы:</strong>Меньше "гламура", чем у Laravel, стиль кодирования может показаться более строгим.</li>
-                        <li><strong>Вердикт:</strong>Отличный выбор для высоконагруженных проектов, таких как порталы, E-commerce и приложения с интенсивной работой с данными. Особенно популярен в странах СНГ.</li>
-                    </ul>
+                <div class="card">
+                    <div class="card-body">
+                        <h3 class="card-title"> CodeIgniter — «Легковес» для простых задач и обучения.</h3>
+                        <ul>
+                            <li><strong>Плюсы:</strong>Очень прост в изучении, минималистичный, высочайшая
+                                производительность, простая интеграция в легаси-код.</li>
+                            <li><strong>Минусы:</strong>Меньше встроенных функций, устаревшая архитектура по сравнению с
+                                конкурентами, меньше инструментов для больших проектов.</li>
+                            <li><strong>Вердикт:</strong>Идеален для новичков, чтобы понять MVC, для маленьких проектов,
+                                прототипов или когда нужно максимально быстрое и легкое решение.</li>
+                        </ul>
+                    </div>
                 </div>
-            </div>
-
-            <div class="card">
-                <div class="card-body">
-                    <h3 class="card-title"> CodeIgniter — «Легковес» для простых задач и обучения.</h3>
-                    <ul>
-                        <li><strong>Плюсы:</strong>Очень прост в изучении, минималистичный, высочайшая производительность, простая интеграция в легаси-код.</li>
-                        <li><strong>Минусы:</strong>Меньше встроенных функций, устаревшая архитектура по сравнению с конкурентами, меньше инструментов для больших проектов.</li>
-                        <li><strong>Вердикт:</strong>Идеален для новичков, чтобы понять MVC, для маленьких проектов, прототипов или когда нужно максимально быстрое и легкое решение.</li>
-                    </ul>
-                </div>
-            </div>
-
-
-
-            
+                </section>
+            </main>
         </div>
     </div>
 
