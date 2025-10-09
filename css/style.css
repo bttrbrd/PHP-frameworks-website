@@ -2,8 +2,8 @@
 
 :root {
     --bs-font-sans-serif: 'Open Sans', sans-serif;
-    --bd-body-font-family: 'Open Sans', sans-serif;
-    --bs-heading-fond-family: 'Montserrat', sans-serif;
+    --bs-body-font-family: 'Open Sans', sans-serif;
+    --bs-heading-font-family: 'Montserrat', sans-serif;
     --primary-color: #174892;
     --secondary-color: #1E293B;
     --accent-color: #2563eb;
@@ -66,6 +66,7 @@ body {
     border-radius: 0.5rem;
     padding: 0.5rem;
     font-family: 'Montserrat', sans-serif;
+    z-index: 1030;
 }
 
 .dropdown-item {
@@ -144,6 +145,8 @@ h4, h5, h6 {
     font-weight: 600;
     font-family: 'Montserrat', sans-serif;
     border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+    background-color: #174892 !important; /* ← ДОБАВЛЕНО: синий фон */
+    color: white !important;
 }
 
 .card-body {
@@ -153,14 +156,28 @@ h4, h5, h6 {
 .card-title {
     font-family: 'Montserrat', sans-serif;
     font-weight: 600;
-    margin-bottom: 0,75;
+    margin-bottom: 0.75rem; /* ← ИСПРАВЛЕНО: запятая на точку */
+    color: var(--secondary-color) !important; /* ← ИСПРАВЛЕНО: обычный цвет */
+}
+
+/* Только заголовки ВНУТРИ card-header должны быть белыми */
+.card-header .card-title {
+    color: white !important; /* ← Белый только в шапках карточек */
+}
+
+.card-header h5,
+.card-header h6,
+.card-header .h5,
+.card-header .h6 {
+    color: white !important;
+    margin-bottom: 0;
 }
 
 /*Сайдбар*/
 aside .card-header {
     font-weight: 600;
     border-bottom: none;
-    color: white;
+    color: white !important;
 }
 
 .card .card-header {
@@ -171,6 +188,14 @@ aside .card-header {
 .sidebar-header {
     background-color: #174892 !important;
     color: white !important;
+}
+
+aside .card-header h5,
+aside .card-header h6,
+aside .card-header .h5,
+aside .card-header .h6 {
+    color: white !important;          
+    margin-bottom: 0;
 }
 
 /*Списки в сайдбаре*/
@@ -185,7 +210,7 @@ aside .card-header {
 }
 
 .list-group-item:hover {
-    background-color: #ffffff;
+    background-color: var(--primary-color);
     transform: translateX(5px);
     color: white;
     border-color: transparent;
@@ -338,7 +363,7 @@ img {
         order: 1;
     }
 
-    table-container {
+    .table-container {
         font-size: 0.85rem;
     }
     
@@ -373,4 +398,12 @@ img {
 
 .iframe-no-border {
     border: none;
+}
+
+.text-danger {
+    color: #dc3545 !important;
+}
+
+.text-success {
+    color: #198754 !important;
 }
