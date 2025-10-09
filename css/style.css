@@ -2,83 +2,165 @@
 
 :root {
     --bs-font-sans-serif: 'Open Sans', sans-serif;
-    --bs-body-color: #1E293B;
-    --bs-body-bg: #F8FAFC;
-    --bs-primary: #6366F1;
-    --bs-primary-rgb: 99, 102, 241;
-    --bs-secondary: #0EA5E9;
-    --bs-secondary-rgb: 14, 165, 233;
-    --bs-dark: #1E293B;
-    --bs-light: #F8FAFC;
-    --bs-border-color: #E2E8F0;
+    --bd-body-font-family: 'Open Sans', sans-serif;
+    --bs-heading-fond-family: 'Montserrat', sans-serif;
+    --primary-color: #174892;
+    --secondary-color: #1E293B;
+    --accent-color: #2563eb;
+    --light-blue: #e0f2fe;
 }
 
 body {
     font-family: 'Open Sans', sans-serif;
     color: #1E293B;
-    background-color: #F8FAFC;
     line-height: 1.6;
+    font-weight: 400;
 }
 
 /*Навигационная панель*/
 .navbar {
     background-color: rgb(23, 72, 146) !important;
-    box-shadow: 0 2px 4px rgb(18, 42, 78) !important;
-}
-
-.navbar-brand {
-    color: aliceblue !important;
-    font-weight: 600;
-    font-size: 1.5rem;
+    box-shadow: 0 2px 10px rgb(18, 42, 78) !important;
     font-family: 'Montserrat', sans-serif;
 }
 
-.navbar-brand:hover {
-    color: aliceblue !important;
+.navbar-brand {
+    color: white !important;
+    font-weight: 700;
+    font-size: 1.5rem;
+    font-family: 'Montserrat', sans-serif;
+    transition: transform 0.3s ease;
+    letter-spacing: 0.5px;
 }
 
-.navbar-toggler {
-    color: aliceblue !important;
+.navbar-brand:hover {
+    color: white !important;
+    transform: scale(1.05);
 }
 
 .navbar-nav .nav-link {
     color: aliceblue !important;
 }
 
+.navbar-nav .nav-link:hover,
 .navbar-nav .nav-link.active {
-    color: aliceblue !important;
+    color: white !important;
+    font-weight: 700;
+    transform: translateY(-2px);
+}
+
+.navbar-toggler {
+    color: white !important;
+    border: none;
+    padding: 0.25rem 0.5rem;
+}
+
+.navbar-toggler:focus {
+    box-shadow: none;
+}
+
+/*Выпадающее меню*/
+.dropdown-menu {
+    border: none;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    border-radius: 0.5rem;
+    padding: 0.5rem;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.dropdown-item {
+    border-radius: 0.375rem;
+    padding: 0.5rem 1rem;
+    transition: all 0.3s ease;
+    font-weight: 500;
+}
+
+.dropdown-item:hover {
+    background-color: var(--primary-color);
+    color: white;
+    transform: translateX(5px);
+}
+
+/*Заголовки*/
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    color: var(--secondary-color);
+}
+
+h1 {
+    color: var(--primary-color);
+    border-bottom: 3px solid var(--primary-color);
+    padding-bottom: 0.5rem;
+    font-weight: 800;
+    letter-spacing: -0.5px;
+}
+
+h2 {
+    color: var(--secondary-color);
+    margin-bottom: 1.5rem;
+    position: relative;
     font-weight: 700;
 }
 
-.navbar-nav .nav-link:hover {
-    color: aliceblue !important;
+h2::after {
+    content: '';
+    position: absolute;
+    bottom: -0.5rem;
+    left: 0;
+    width: 60px;
+    height: 3px;
+    background: linear-gradient(135deg, var(--primary-color), var(--info-color));
+    border-radius: 2px;
+}
+
+h3 {
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+h4, h5, h6 {
     font-weight: 600;
 }
 
-/*Изображения*/
-img {
-    max-width: 100%;
-    height: auto;
-    display: block;
-
-}
-
+/*Карточки*/
 .card {
-    box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
-    border: 1px solid rgba(0, 0, 0, 0.125);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.075);
+    border: none;
+    border-radius: 0.75rem;
     transition: all 0.3s ease;
     margin-bottom: 1.5rem;
+    font-family: 'Open Sans', sans-serif;
 }
 
 .card:hover {
-    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
     transform: translateY(-2px);
+}
+
+.card-header {
+    border-radius: 0.75rem 0.75rem 0 0 !important;
+    padding: 1rem 1.25rem;
+    font-weight: 600;
+    font-family: 'Montserrat', sans-serif;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.card-body {
+    padding: 1.5rem;
+}
+
+.card-title {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    margin-bottom: 0,75;
 }
 
 /*Сайдбар*/
 aside .card-header {
     font-weight: 600;
     border-bottom: none;
+    color: white;
 }
 
 .card .card-header {
@@ -91,24 +173,148 @@ aside .card-header {
     color: white !important;
 }
 
-/* Стили для кнопок в сайдбаре */
-.btn {
-    transition: all 0.3s ease;
-}
-
-.btn:hover {
-    transform: translateY(-1px);
-}
-
+/*Списки в сайдбаре*/
 .list-group-item {
     border: none;
     padding: 0.75rem 1rem;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
     transition: background-color 0.2s ease;
+    color: #495057;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
 }
 
 .list-group-item:hover {
     background-color: #ffffff;
     transform: translateX(5px);
+    color: white;
+    border-color: transparent;
+}
+
+.list-group-item i {
+    margin-right: 0.5rem;
+    width: 1.25rem;
+    text-align: center;
+}
+
+/* Кнопки */
+.btn {
+    border-radius: 0.5rem;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    font-family: 'Montserrat', sans-serif;
+    border: 2px solid transparent;
+}
+
+.btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.btn-outline-primary {
+    border-color: var(--primary-color);
+    color: var(--primary-color);
+}
+
+.btn-outline-primary:hover {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+}
+
+.btn-outline-success {
+    border-color: #059669;
+    color: #059669;
+}
+
+.btn-outline-success:hover {
+    background-color: #059669;
+    border-color: #059669;
+}
+
+/* Таблица сравнения */
+.table-container {
+    border-radius: 0.75rem;
+    background: white;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.075);
+}
+
+.table {
+    margin-bottom: 0;
+    font-size: 0.95rem;
+}
+
+.table thead th {
+    border-bottom: 2px solid #dee2e6;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 0.85rem;
+    letter-spacing: 0.5px;
+    padding: 1rem 0.75rem;
+    vertical-align: middle;
+    font-family: 'Montserrat', sans-serif;
+    background-color: var(--primary-color);
+    color: white;
+}
+
+.table tbody td {
+    padding: 1rem 0.75rem;
+    vertical-align: top;
+    border-color: #f1f3f4;
+}
+
+.table tbody tr:hover {
+    background-color: rgba(23, 72, 146, 0.05);
+    transition: background-color 0.3s ease;
+}
+
+.table-bordered {
+    border: 1px solid #dee2e6;
+}
+
+.table-bordered th,
+.table-bordered td {
+    border: 1px solid #dee2e6;
+}
+
+/* Футер */
+footer {
+    background: linear-gradient(135deg, #000000 0%, #174892 100%) !important;
+    margin-top: 3rem;
+    font-family: 'Open Sans', sans-serif;
+}
+
+footer h5 {
+    color: white;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    font-family: 'Montserrat', sans-serif;
+}
+
+footer ul li {
+    margin-bottom: 0.5rem;
+}
+
+footer a {
+    transition: color 0.3s ease;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: #93c5fd !important;
+}
+
+footer .bi {
+    margin-right: 0.5rem;
+    width: 1rem;
+}
+
+/*Изображения*/
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 0.5rem;
 }
 
 /* Адаптивность для мобильных устройств */
@@ -131,4 +337,40 @@ aside .card-header {
     main {
         order: 1;
     }
+
+    table-container {
+        font-size: 0.85rem;
+    }
+    
+    .table th,
+    .table td {
+        padding: 0.5rem;
+    }
+    
+    .card-body {
+        padding: 1rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .table {
+        font-size: 0.8rem;
+    }
+    
+    .btn {
+        padding: 0.375rem 0.75rem;
+        font-size: 0.9rem;
+    }
+    
+    h1 {
+        font-size: 1.5rem;
+    }
+    
+    h2 {
+        font-size: 1.3rem;
+    }
+}
+
+.iframe-no-border {
+    border: none;
 }
